@@ -60,7 +60,7 @@
 #         print(element)
 
 # nova_lista = [element for element in a if element < 5]
-# print(nova_lista)   
+# print(nova_lista)
 # # new_list = creates a new list called new_list that will hold the filtered elements.
 # # [ starts a list comprehension, which is a concise way to create a new list in Python.
 # # element is the name we give to the variable that represents each element in the original list a.
@@ -83,7 +83,7 @@
 #         divisors.append(i)
 # print("the divisor of ", num, "are:", divisors)
 
-#vjezba5 List Overlap
+# vjezba5 List Overlap
 
 # a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 # b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
@@ -91,7 +91,7 @@
 # common_list_elements = list(set(a) & set(b))
 # print(common_list_elements)
 
-#vjezba6 String Lists
+# vjezba6 String Lists
 
 # string = input("Enter a string: ")
 # string = string.lower()
@@ -101,11 +101,36 @@
 # else:
 #     print("The string is not a palindrome.")
 
-#vjezba7 List Comprehensions
+# vjezba7 List Comprehensions
 
 # a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 # samoEvenNum = [num for num in a if num % 2 ==0]
 # print(samoEvenNum)
 
-#vjezba8 
+# vjezba8 Rock Paper Scissors
+
+# print("Welcome to classic rock paper scissors, RULES: type R for rock, P for paper and S for scissors, all invalid inputs wont be processed")
+
+# while True:
+#     player_one = input("What do you play PLAYER ONE? ").lower()
+#     player_two = input("What do you play PLAYER TWO? ").lower()
+
+#     if player_one not in ["r","p","s"] or player_two not in ["r","p","s"]:
+#         print("Invalid input")
+#         continue
+
+#     if player_one == player_two:
+#         print("Tie!")
+#     elif player_one == "r" and player_two == "s":
+#         print("Player 1 wins")
+#     elif player_one == "s" and player_two == "p":
+#         print("Player 1 wins!")
+#     elif player_one == "p" and player_two == "r":
+#         print("Player 1 wins!")
+#     else:
+#         print("Player 2 wins!")
+
+#     play_again = input("Do you want to playe again? (y/n)").lower()
+#     if play_again != "y":
+#         break
