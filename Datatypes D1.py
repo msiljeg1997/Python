@@ -134,3 +134,133 @@
 #     play_again = input("Do you want to playe again? (y/n)").lower()
 #     if play_again != "y":
 #         break
+
+#  #vjezba9 guessing game one
+
+# import random
+
+# randomnNum = random.randint(0,9)
+# odgovor = int(input("guess what number  "))
+
+# print(randomnNum)
+
+# if odgovor == randomnNum:
+#     print("you got it right! nice!")
+# else:
+#     print("try again!")
+
+# #vjezba10 list overlap again
+
+# a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89,164]
+# b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13,164]
+
+# new_list = (list(set(a) & set(b)))
+# print(new_list)
+
+#vjezba11 check primality functions
+
+# def is_prime(n):
+#     if n < 2:
+#         return False
+#     for i in range (2, int(n**0.5)+1):
+#         if n % i == 0:
+#             return False
+#     return True
+
+# arr = list (range(0,101))
+# primes = []
+# for el in arr:
+#     if is_prime(el):
+#         primes.append(el)
+
+# print(primes)
+
+# # In this code, is_prime() is a function that checks whether a given number n is prime or not.
+# #  It does so by iterating over all the integers from 2 to the square root of n (inclusive) 
+# # and checking if any of them divide n without leaving a remainder. If such a number is found,
+# #  then n is not prime, and the function returns False. Otherwise, it returns True.
+# # We then create an array arr using the range() function with the argument (0, 101) to generate
+# #  a sequence of integers from 0 to 100 (inclusive). We initialize an empty list primes to store
+# #  the prime numbers that we find. We then iterate over all the numbers in arr and use the is_prime()
+# # function to check if each number is prime. If it is, we add it to the primes list.
+# # Finally, we print the primes list to display all the prime numbers in the array.
+
+# vjezba 12 List Ends
+
+# a = [5, 10, 15, 20, 25]
+
+# def firstLast (el):
+#     return [el[0], el[-1]]
+
+# novaLista = firstLast(a)
+# print(novaLista)
+
+# # vjezba13 Fibonacci Function
+
+
+# def fibonacci():
+#     num = int(input("How many numbers that generates?:"))
+#     i = 1
+#     if num == 0:
+#         fib = []
+#     elif num == 1:
+#         fib = [1]
+#     elif num == 2:
+#         fib = [1,1]
+#     elif num > 2:
+#         fib = [1,1]
+#         while i < (num - 1):
+#             fib.append(fib[i] + fib[i-1])
+#             i += 1
+#     return fib
+# print(fibonacci())
+# input()
+
+## vjezba14 List remove Duplicates Function
+# def remove_duplicates(lst):
+#     """Return a new list with all duplicates removed."""
+#     new_lst = []
+#     for item in lst:
+#         if item not in new_lst:
+#             new_lst.append(item)
+#     return new_lst
+
+# # Define a list with duplicates
+# my_list = [1, 2, 2, 3, 3, 3, 4, 5, 5]
+
+# # Call the remove_duplicates function to get a new list with duplicates removed
+# novaLista = remove_duplicates(my_list)
+
+# # Print the new list
+# print(novaLista)  # Output: [1, 2, 3, 4, 5]
+
+## vjezba15 Reverse String
+
+# def reverse_string(string):
+#     # Split the string into words
+#     varRijec = string.split()
+#     # Reverse the order of words
+#     varRijec.reverse()
+#     # Join the words back into a string
+#     reversed_string = " ".join(varRijec)
+#     return reversed_string
+
+# # Implimentacija funkcije
+# input_string = input("Enter a long string containing multiple words: ")
+# reversed_string = reverse_string(input_string)
+# print(reversed_string)
+
+## vjezba16 Password Generator
+
+# import random
+
+# def randomPassword(length=10, chars=None):
+#     if chars is None:
+#         chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%¨&*()_+/*\\|<>;:"
+#     password = ""
+#     for i in range(length):
+#         password += random.choice(chars)
+#     return password
+
+
+# print(randomPassword())
